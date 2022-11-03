@@ -69,9 +69,31 @@ printNumbers(10, 5);
 
 //Write your code below this line:
 
+function isLeapYear(year) 
+{
+	if(typeof year !== 'number') {
+		let str = `${year} should be a number`;
+		return str;
 
+	}
+	let isLY;
+	if (year % 4 === 0 && year % 100 !== 0){
+		isLY = true;
+	} else if(year % 400 === 0){
+		isLY = true;
+	} else {
+		isLY = false;
+	}
 
+	let returnStr =`${year} is not a leap year`;
+	if(isLY = true)
+		{returnStr =`${year} is a leap year`};
 
+	return returnStr;
+
+}
+
+console.log(isLeapYear(1200));
 
 // 3. Perfect Square
 
