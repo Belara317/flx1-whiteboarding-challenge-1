@@ -93,7 +93,7 @@ function isLeapYear(year)
 
 }
 
-console.log(isLeapYear(1200));
+console.log(isLeapYear(2000));
 
 // 3. Perfect Square
 
@@ -109,3 +109,19 @@ console.log(isLeapYear(1200));
 // You may not use the built-in Math.sqrt method
 
 //Write your code below this line:
+
+function perfectSquare(num) {
+	for(i=0; i*i<=num; i++)
+	{
+	  if(i*i === num)
+	  {
+		return true;
+	  }
+	}
+	
+	return false;
+  
+  }
+	
+  
+  console.log(perfectSquare(36));
