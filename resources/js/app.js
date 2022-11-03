@@ -12,6 +12,40 @@
 
 // //Write your code below this line:
 
+function printNumbers( lower, upper)
+{
+
+	if(typeof lower !== 'number' || typeof upper !== 'number')
+	{
+		console.log(`Atleast one of the inputs is not a number. Inputs: ${lower} and ${upper}.`);
+		return;
+	}
+		
+
+	if(lower > upper)
+	{
+		console.log(`lowerLimit: ${lower} is larger than the upperLimit: ${upper}`)
+		return;
+	}
+
+	for (let i = lower; i<= upper; i++)
+	{
+		if(i%3 === 0 && i%5 === 0){
+			console.log('GenBuzz');
+		}else if(i%3 === 0){
+			console.log('Gen');
+		}else if(i%5 === 0){
+			console.log('Buzz');
+		}else{
+			console.log(i);
+		};
+	}
+}
+
+printNumbers(10, 5);
+
+//let printNumbers = 10;
+
 
 
 
